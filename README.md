@@ -41,7 +41,7 @@ Running Predictions
 
 Use the prediction script:
 
-python pH_predict_MF2.py
+python pH_predict.py
 
 
 Before running, update three paths inside the script:
