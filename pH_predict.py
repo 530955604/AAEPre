@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 model="AAEPre"
-for fold in range(6):
+for fold in range(5):
     save_path = "/example/results/"+str(fold)
 
     cmd="python run_classification_correlation_2.py" \
@@ -20,7 +20,7 @@ for fold in range(6):
 dfs = []
 prefix = None
 
-for i in range(6):
+for i in range(5):
     folder = f"/example/results/fold_{i}"
     for fname in os.listdir(folder):
         if fname.endswith("_predict_result.csv"):
